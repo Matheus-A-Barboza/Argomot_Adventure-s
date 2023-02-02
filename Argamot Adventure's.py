@@ -23,7 +23,7 @@ while 'mago' or 'Mago':
     mago = ("2força + 10pdh + 5dfs + 5vida + 0arm + 20mana")
     skill0 = ('Você utilizou Tempestade de Areia e deu 5 de dano.')
     skill1 = ('Você utilizou Raio Magnetico e deu 5 de dano.')
-    skills = [skill0, skill1]
+    skillsMago = [skill0, skill1]
     forca=2
     pdh=10
     defesa=5
@@ -38,7 +38,7 @@ while 'guerreiro' or 'Guerreiro':
     guerreiro = ("15força + 0pdh + 8dfs + 10vida + 20arm + 0mana")
     skill0 = ("Você utilizou Corta-Vento e deu 5 de dano.")
     skill1 = ('Você utilizou Corte Certeiro e deu 5 de dano.')
-    skills = [skill0, skill1]
+    skillsGuerreiro = [skill0, skill1]
     forca=15
     pdh=0
     defesa=8
@@ -54,7 +54,7 @@ while 'arqueiro' or 'Arqueiro':
     arqueiro = ("10força + 5pdh + 5dfs + 8vida + 10arm + 5mana")
     skill0 = ('Você utilizou Ponta de Agulha e deu 5 de dano.')
     skill1 = ('Você utilizou Precisão Perfeita e deu 5 de dano.')
-    skills = [skill0,skill1]
+    skillsArqueiro = [skill0,skill1]
     forca=10
     pdh=5
     defesa=5
@@ -123,7 +123,7 @@ while True:
             load()
             usarSkill1=input("Vamos escolha uma skill que deseja utilizar 0-Tempestade de Areia ou 1-Raio Magnetico: ")
             if usarSkill1 == '0':
-                print(skills[0])
+                print(skillsMago[0])
                 resultadoDano = danoSkill1 - hpMobTuto
                 load()
                 print(f'Ual, você acertou o mob e causou {danoSkill1} de dano, levando seu HP à {resultadoDano}.')
@@ -131,7 +131,7 @@ while True:
                 print(f'SISTEMA: Voltando para o Argomot!')
                 aguarde()
             elif usarSkill1 == '1':
-                print(skills[1])
+                print(skillsMago[1])
                 resultadoDano = danoSkill1 - hpMobTuto
                 load()
                 print(f'Ual, você acertou o mob e causou {danoSkill1} de dano, levando seu HP à {resultadoDano}.')
@@ -147,7 +147,7 @@ while True:
             load()
             usarSkill1=input("Vamos escolha uma skill que deseja utilizar 0-Corta-Vento ou 1-Corte Certeiro: ")
             if usarSkill1 == '0':
-                print(skills[0])
+                print(skillsGuerreiro[0])
                 resultadoDano = danoSkill1 - hpMobTuto
                 load()
                 print(f'Ual, você acertou o mob e causou {danoSkill1} de dano, levando seu HP à {resultadoDano}.')
@@ -155,7 +155,7 @@ while True:
                 print(f'SISTEMA: Voltando para o Argomot!')
                 aguarde()
             elif usarSkill1 == '1':
-                print(skills[1])
+                print(skillsGuerreiro[1])
                 resultadoDano = danoSkill1 - hpMobTuto
                 load()
                 print(f'Ual, você acertou o mob e causou {danoSkill1} de dano, levando seu HP à {resultadoDano}.')
@@ -172,7 +172,7 @@ while True:
                 load()
                 usarSkill1=input("Vamos escolha uma skill que deseja utilizar 0-Ponta de Agulha ou 1-Precisão Perfeita: ")
                 if usarSkill1 == '0':
-                    print(skills[0])
+                    print(skillsArqueiro[0])
                     resultadoDano = danoSkill1 - hpMobTuto
                     load()
                     print(f'Ual, você acertou o mob e causou {danoSkill1} de dano, levando seu HP à {resultadoDano}.')
@@ -180,7 +180,7 @@ while True:
                     print(f'SISTEMA: Voltando para o Argomot!')
                     aguarde()
                 elif usarSkill1 == '1':
-                    print(skills[1])
+                    print(skillsArqueiro[1])
                     resultadoDano = danoSkill1 - hpMobTuto
                     load()
                     print(f'Ual, você acertou o mob e causou {danoSkill1} de dano, levando seu HP à {resultadoDano}.')
